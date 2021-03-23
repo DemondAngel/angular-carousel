@@ -160,11 +160,7 @@ export class CarouselComponent implements OnDestroy {
     }
 
     get loop() {
-        if (this.images) {
-            return this._loop;
-        } else {
-            return false;
-        }
+        return this._loop;
     }
 
     @Input('lightDOM') set lightDOM(value: boolean) {
