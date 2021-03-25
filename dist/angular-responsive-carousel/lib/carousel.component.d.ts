@@ -1,6 +1,7 @@
 import { ChangeDetectorRef, ElementRef, EventEmitter, OnDestroy, SimpleChanges } from '@angular/core';
 import { Images } from './interfaces';
 import { Properties as CarouselProperties } from './interfaces';
+import * as i0 from "@angular/core";
 export declare class CarouselComponent implements OnDestroy {
     private elementRef;
     private ref;
@@ -99,4 +100,6 @@ export declare class CarouselComponent implements OnDestroy {
     isNextArrowDisabled(): any;
     isPrevArrowDisabled(): any;
     getCellLength(): any;
+    static ɵfac: i0.ɵɵFactoryDef<CarouselComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<CarouselComponent, "carousel, [carousel]", never, { "id": "id"; "height": "height"; "width": "width"; "autoplay": "autoplay"; "autoplayInterval": "autoplayInterval"; "pauseOnHover": "pauseOnHover"; "dots": "dots"; "borderRadius": "borderRadius"; "margin": "margin"; "objectFit": "objectFit"; "minSwipeDistance": "minSwipeDistance"; "transitionDuration": "transitionDuration"; "transitionTimingFunction": "transitionTimingFunction"; "videoProperties": "videoProperties"; "counterSeparator": "counterSeparator"; "overflowCellsLimit": "overflowCellsLimit"; "listeners": "listeners"; "cellsToShow": "cellsToShow"; "cellsToScroll": "cellsToScroll"; "freeScroll": "freeScroll"; "arrows": "arrows"; "arrowsOutside": "arrowsOutside"; "arrowsTheme": "arrowsTheme"; "images": "images"; "cellWidth": "cellWidth"; "isCounter": "counter"; "loop": "loop"; "lightDOM": "lightDOM"; }, { "events": "events"; }, never, ["*"]>;
 }
