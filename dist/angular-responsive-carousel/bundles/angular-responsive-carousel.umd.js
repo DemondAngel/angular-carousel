@@ -9,16 +9,13 @@
         }
         return AngularResponsiveCarouselService;
     }());
-    AngularResponsiveCarouselService.ɵfac = function AngularResponsiveCarouselService_Factory(t) { return new (t || AngularResponsiveCarouselService)(); };
-    AngularResponsiveCarouselService.ɵprov = i0.ɵɵdefineInjectable({ token: AngularResponsiveCarouselService, factory: AngularResponsiveCarouselService.ɵfac, providedIn: 'root' });
-    /*@__PURE__*/ (function () {
-        i0.ɵsetClassMetadata(AngularResponsiveCarouselService, [{
-                type: i0.Injectable,
-                args: [{
-                        providedIn: 'root'
-                    }]
-            }], function () { return []; }, null);
-    })();
+    AngularResponsiveCarouselService.ɵprov = i0.ɵɵdefineInjectable({ factory: function AngularResponsiveCarouselService_Factory() { return new AngularResponsiveCarouselService(); }, token: AngularResponsiveCarouselService, providedIn: "root" });
+    AngularResponsiveCarouselService.decorators = [
+        { type: i0.Injectable, args: [{
+                    providedIn: 'root'
+                },] }
+    ];
+    AngularResponsiveCarouselService.ctorParameters = function () { return []; };
 
     var AngularResponsiveCarouselComponent = /** @class */ (function () {
         function AngularResponsiveCarouselComponent() {
@@ -27,43 +24,26 @@
         };
         return AngularResponsiveCarouselComponent;
     }());
-    AngularResponsiveCarouselComponent.ɵfac = function AngularResponsiveCarouselComponent_Factory(t) { return new (t || AngularResponsiveCarouselComponent)(); };
-    AngularResponsiveCarouselComponent.ɵcmp = i0.ɵɵdefineComponent({ type: AngularResponsiveCarouselComponent, selectors: [["lib-angular-responsive-carousel"]], decls: 2, vars: 0, template: function AngularResponsiveCarouselComponent_Template(rf, ctx) {
-            if (rf & 1) {
-                i0.ɵɵelementStart(0, "p");
-                i0.ɵɵtext(1, " angular-responsive-carousel works! ");
-                i0.ɵɵelementEnd();
-            }
-        }, encapsulation: 2 });
-    /*@__PURE__*/ (function () {
-        i0.ɵsetClassMetadata(AngularResponsiveCarouselComponent, [{
-                type: i0.Component,
-                args: [{
-                        selector: 'lib-angular-responsive-carousel',
-                        template: "\n    <p>\n      angular-responsive-carousel works!\n    </p>\n  ",
-                        styles: []
-                    }]
-            }], function () { return []; }, null);
-    })();
+    AngularResponsiveCarouselComponent.decorators = [
+        { type: i0.Component, args: [{
+                    selector: 'lib-angular-responsive-carousel',
+                    template: "\n    <p>\n      angular-responsive-carousel works!\n    </p>\n  "
+                },] }
+    ];
+    AngularResponsiveCarouselComponent.ctorParameters = function () { return []; };
 
     var AngularResponsiveCarouselModule = /** @class */ (function () {
         function AngularResponsiveCarouselModule() {
         }
         return AngularResponsiveCarouselModule;
     }());
-    AngularResponsiveCarouselModule.ɵmod = i0.ɵɵdefineNgModule({ type: AngularResponsiveCarouselModule });
-    AngularResponsiveCarouselModule.ɵinj = i0.ɵɵdefineInjector({ factory: function AngularResponsiveCarouselModule_Factory(t) { return new (t || AngularResponsiveCarouselModule)(); }, imports: [[]] });
-    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && i0.ɵɵsetNgModuleScope(AngularResponsiveCarouselModule, { declarations: [AngularResponsiveCarouselComponent], exports: [AngularResponsiveCarouselComponent] }); })();
-    /*@__PURE__*/ (function () {
-        i0.ɵsetClassMetadata(AngularResponsiveCarouselModule, [{
-                type: i0.NgModule,
-                args: [{
-                        declarations: [AngularResponsiveCarouselComponent],
-                        imports: [],
-                        exports: [AngularResponsiveCarouselComponent]
-                    }]
-            }], null, null);
-    })();
+    AngularResponsiveCarouselModule.decorators = [
+        { type: i0.NgModule, args: [{
+                    declarations: [AngularResponsiveCarouselComponent],
+                    imports: [],
+                    exports: [AngularResponsiveCarouselComponent]
+                },] }
+    ];
 
     /*
      * Public API Surface of angular-responsive-carousel
