@@ -1,7 +1,6 @@
 import { ChangeDetectorRef, ElementRef, EventEmitter, OnDestroy, SimpleChanges } from '@angular/core';
 import { Images } from './interfaces';
 import { Properties as CarouselProperties } from './interfaces';
-import * as ɵngcc0 from '@angular/core';
 export declare class CarouselComponent implements OnDestroy {
     private elementRef;
     private ref;
@@ -100,8 +99,4 @@ export declare class CarouselComponent implements OnDestroy {
     isNextArrowDisabled(): any;
     isPrevArrowDisabled(): any;
     getCellLength(): any;
-    static ɵfac: ɵngcc0.ɵɵFactoryDef<CarouselComponent, never>;
-    static ɵcmp: ɵngcc0.ɵɵComponentDefWithMeta<CarouselComponent, "carousel, [carousel]", never, { "height": "height"; "autoplay": "autoplay"; "autoplayInterval": "autoplayInterval"; "pauseOnHover": "pauseOnHover"; "dots": "dots"; "margin": "margin"; "objectFit": "objectFit"; "minSwipeDistance": "minSwipeDistance"; "transitionDuration": "transitionDuration"; "transitionTimingFunction": "transitionTimingFunction"; "counterSeparator": "counterSeparator"; "overflowCellsLimit": "overflowCellsLimit"; "listeners": "listeners"; "cellsToScroll": "cellsToScroll"; "freeScroll": "freeScroll"; "arrows": "arrows"; "arrowsTheme": "arrowsTheme"; "isCounter": "counter"; "images": "images"; "cellWidth": "cellWidth"; "loop": "loop"; "lightDOM": "lightDOM"; "id": "id"; "width": "width"; "borderRadius": "borderRadius"; "videoProperties": "videoProperties"; "cellsToShow": "cellsToShow"; "arrowsOutside": "arrowsOutside"; }, { "events": "events"; }, never, ["*"]>;
 }
-
-//# sourceMappingURL=carousel.component.d.ts.map
