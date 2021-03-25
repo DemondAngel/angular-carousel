@@ -9,6 +9,6 @@ import { IvyCarouselModule } from './carousel/carousel.module';
   imports: [
     IvyCarouselModule
   ],
-  exports: [AngularResponsiveCarouselComponent]
+  exports: [AngularResponsiveCarouselComponent, IvyCarouselModule]
 })
 export class AngularResponsiveCarouselModule { }
