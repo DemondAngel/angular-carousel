@@ -1924,5 +1924,5 @@ IvyCarouselModule.ɵinj = ɵɵdefineInjector({ factory: function IvyCarouselModu
  * Generated bundle index. Do not edit.
  */
 
-export { Carousel, CarouselComponent, Cells, ImageUtils, IvyCarouselModule, Utils };
+export { CarouselComponent, IvyCarouselModule };
 //# sourceMappingURL=angular-responsive-carousel.js.map

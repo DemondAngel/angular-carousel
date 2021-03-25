@@ -2278,12 +2278,8 @@
      * Generated bundle index. Do not edit.
      */
 
-    exports.Carousel = Carousel;
     exports.CarouselComponent = CarouselComponent;
-    exports.Cells = Cells;
-    exports.ImageUtils = ImageUtils;
     exports.IvyCarouselModule = IvyCarouselModule;
-    exports.Utils = Utils;
 
     Object.defineProperty(exports, '__esModule', { value: true });
 
