@@ -18,6 +18,8 @@
     "paths": {
       "angular-responsive-carousel": [
         "dist/angular-responsive-carousel/angular-responsive-carousel",
+        "dist/angular-responsive-carousel",
+        "dist/angular-responsive-carousel/angular-responsive-carousel",
         "dist/angular-responsive-carousel"
       ]
     }

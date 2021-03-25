@@ -21,6 +21,12 @@
     },
     {
       "path": "./projects/angular-responsive-carousel/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angular-responsive-carousel/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/angular-responsive-carousel/tsconfig.spec.json"
     }
 ]
 }
