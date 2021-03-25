@@ -2133,7 +2133,7 @@
                     imports: [
                         IvyCarouselModule
                     ],
-                    exports: [AngularResponsiveCarouselComponent]
+                    exports: [AngularResponsiveCarouselComponent, IvyCarouselModule]
                 },] }
     ];
 
