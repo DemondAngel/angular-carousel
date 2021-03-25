@@ -1,1 +1,0 @@
-{"version":3,"file":"angular-responsive-carousel.service.d.ts","sources":["angular-responsive-carousel.service.d.ts"],"names":[],"mappings":";AAAA;AACA;;AACA","sourcesContent":["export declare class AngularResponsiveCarouselService {\r\n    constructor();\r\n}\r\n"]}

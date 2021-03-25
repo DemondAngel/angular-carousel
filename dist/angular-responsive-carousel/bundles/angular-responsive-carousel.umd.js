@@ -2,35 +2,7 @@
     typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/common')) :
     typeof define === 'function' && define.amd ? define('angular-responsive-carousel', ['exports', '@angular/core', '@angular/common'], factory) :
     (global = global || self, factory(global['angular-responsive-carousel'] = {}, global.ng.core, global.ng.common));
-}(this, (function (exports, i0, common) { 'use strict';
-
-    var AngularResponsiveCarouselService = /** @class */ (function () {
-        function AngularResponsiveCarouselService() {
-        }
-        return AngularResponsiveCarouselService;
-    }());
-    AngularResponsiveCarouselService.ɵprov = i0.ɵɵdefineInjectable({ factory: function AngularResponsiveCarouselService_Factory() { return new AngularResponsiveCarouselService(); }, token: AngularResponsiveCarouselService, providedIn: "root" });
-    AngularResponsiveCarouselService.decorators = [
-        { type: i0.Injectable, args: [{
-                    providedIn: 'root'
-                },] }
-    ];
-    AngularResponsiveCarouselService.ctorParameters = function () { return []; };
-
-    var AngularResponsiveCarouselComponent = /** @class */ (function () {
-        function AngularResponsiveCarouselComponent() {
-        }
-        AngularResponsiveCarouselComponent.prototype.ngOnInit = function () {
-        };
-        return AngularResponsiveCarouselComponent;
-    }());
-    AngularResponsiveCarouselComponent.decorators = [
-        { type: i0.Component, args: [{
-                    selector: 'lib-angular-responsive-carousel',
-                    template: "\n    <p>\n      angular-responsive-carousel works!\n    </p>\n  "
-                },] }
-    ];
-    AngularResponsiveCarouselComponent.ctorParameters = function () { return []; };
+}(this, (function (exports, core, common) { 'use strict';
 
     var Touches = /** @class */ (function () {
         function Touches(properties) {
@@ -1658,7 +1630,7 @@
             this._cellWidth = 200;
             this._loop = false;
             this._lightDOM = false;
-            this.events = new i0.EventEmitter();
+            this.events = new core.EventEmitter();
             this.height = 200;
             this.autoplay = false;
             this.autoplayInterval = 5000;
@@ -2050,52 +2022,52 @@
         return CarouselComponent;
     }());
     CarouselComponent.decorators = [
-        { type: i0.Component, args: [{
+        { type: core.Component, args: [{
                     selector: 'carousel, [carousel]',
                     template: "<div class=\"carousel-counter\" *ngIf=\"isCounter\">{{counter}}</div>\r\n\r\n<div class=\"carousel-container\" [class.carousel-moving]=\"isMoving\">\r\n\t<div class=\"carousel-cells\" #cells (transitionend)=\"handleTransitionendCellContainer($event)\">\r\n\t\t<ng-content></ng-content>\r\n\r\n\t\t<ng-template ngFor let-image [ngForOf]=\"images\" let-i=\"index\">\r\n\t\t\t<div class=\"carousel-cell\" \r\n\t\t\t\t[style.width]=\"getCellWidth()+'px'\"\r\n\t\t\t\t[style.border-radius]=\"borderRadius+'px'\"\r\n\t\t\t\t*ngIf=\"i < cellLimit\">\r\n\t\t\t\t<!-- Image -->\r\n\t\t\t\t<img \r\n\t\t\t\t\t*ngIf=\"getImage(i) && getImage(i)['image']\" \r\n\t\t\t\t\t[src]=\"getImage(i)['image']['path']\"\r\n\t\t\t\t\t[style.object-fit]=\"objectFit\"\r\n\t\t\t\t\tdraggable=\"false\" />\r\n\r\n\t\t\t</div>\r\n\t\t</ng-template>\r\n\t</div>\r\n\r\n\t<div class=\"carousel-dots\" *ngIf=\"dots\">\r\n\t\t<div class=\"carousel-dot\" [class.carousel-dot-active]=\"i === activeDotIndex\" *ngFor=\"let dot of dotsArr; index as i\"></div>\r\n\t</div>\r\n</div>\r\n\r\n<div class=\"carousel-arrows\" \r\n\t[class.carousel-arrows-outside]=\"arrowsOutside\" \r\n\t[class.carousel-dark-arrows]=\"arrowsTheme === 'dark'\"\r\n\t*ngIf=\"isArrows\">\r\n\t\r\n\t<div class=\"carousel-arrow carousel-arrow-prev\" [class.carousel-arrow-disabled]=\"isPrevArrowDisabled()\" (click)=\"prev()\"></div>\r\n\t<div class=\"carousel-arrow carousel-arrow-next\" [class.carousel-arrow-disabled]=\"isNextArrowDisabled()\" (click)=\"next()\"></div>\r\n</div>",
                     styles: [":host{-moz-user-select:none;-webkit-user-select:none;box-sizing:border-box;display:block;height:100%;left:0;position:relative;top:0;transform-origin:top left;user-select:none;width:100%;z-index:10000}:host .-container{cursor:grab;height:100%;overflow:hidden;width:100%}:host .carousel-container.carousel-moving{cursor:grabbing}:host .carousel-counter{background-color:rgba(23,37,68,.3);border-radius:13px;color:#fff;font-size:11px;line-height:normal;padding:5px 7px;position:absolute;right:24px;text-align:right;top:8px;transition:opacity .2s;z-index:30}:host ::ng-deep .carousel-cells{display:block;height:100%;transition:transform .2s;width:100%;will-change:transform}:host ::ng-deep .carousel-cells .carousel-cell.swiper-prev-image{transform:translate3d(-100%,0,0)}:host ::ng-deep .carousel-cells .carousel-cell.swiper-next-image{transform:translate3d(100%,0,0)}:host ::ng-deep .carousel-cells .carousel-cell{height:100%;overflow:hidden;position:absolute;width:100%}:host ::ng-deep .carousel-cells .carousel-cell img,:host ::ng-deep .carousel-cells .carousel-cell video{height:100%;object-fit:contain;position:relative;width:100%}:host ::ng-deep .carousel-cells .carousel-cell img.swiper-hide{display:none}:host ::ng-deep .carousel-cells .carousel-cell .carousel-play{bottom:0;left:0;position:absolute;right:0;top:0;z-index:1}:host .carousel-arrow{background-color:#fff;background-position:50%;background-repeat:no-repeat;background-size:31px;border-radius:100px;box-shadow:0 0 5px rgba(0,0,0,.15);cursor:pointer;height:40px;margin-top:-20px;position:absolute;top:50%;width:40px;z-index:10}:host .carousel-arrow-prev{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0Ij48cGF0aCBkPSJNMTUuNDEgMTYuNTlMMTAuODMgMTJsNC41OC00LjU5TDE0IDZsLTYgNiA2IDYgMS40MS0xLjQxeiIvPjxwYXRoIGQ9Ik0wIDBoMjR2MjRIMFYweiIgZmlsbD0ibm9uZSIvPjwvc3ZnPg==);left:10px}:host .carousel-arrow-next{background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgd2lkdGg9IjI0Ij48cGF0aCBkPSJNOC41OSAxNi41OUwxMy4xNyAxMiA4LjU5IDcuNDEgMTAgNmw2IDYtNiA2LTEuNDEtMS40MXoiLz48cGF0aCBkPSJNMCAwaDI0djI0SDBWMHoiIGZpbGw9Im5vbmUiLz48L3N2Zz4=);right:10px}:host .carousel-arrows-outside .carousel-arrow-prev{left:-60px}:host .carousel-arrows-outside .carousel-arrow-next{right:-60px}:host .carousel-dark-arrows .carousel-arrow{filter:invert(1)}:host .carousel-arrow-disabled{cursor:default;opacity:.5}:host .carousel-dots{bottom:0;left:0;position:absolute;right:0;text-align:center;z-index:10}:host .carousel-dots .carousel-dot{border:2px solid #fff;border-radius:100px;display:inline-block;height:8px;margin:4px;width:8px}:host .carousel-dots .carousel-dot-active{background-color:#fff}"]
                 },] }
     ];
     CarouselComponent.ctorParameters = function () { return [
-        { type: i0.ElementRef },
-        { type: i0.ChangeDetectorRef }
+        { type: core.ElementRef },
+        { type: core.ChangeDetectorRef }
     ]; };
     CarouselComponent.propDecorators = {
-        events: [{ type: i0.Output }],
-        id: [{ type: i0.Input }],
-        height: [{ type: i0.Input }],
-        width: [{ type: i0.Input }],
-        autoplay: [{ type: i0.Input }],
-        autoplayInterval: [{ type: i0.Input }],
-        pauseOnHover: [{ type: i0.Input }],
-        dots: [{ type: i0.Input }],
-        borderRadius: [{ type: i0.Input }],
-        margin: [{ type: i0.Input }],
-        objectFit: [{ type: i0.Input }],
-        minSwipeDistance: [{ type: i0.Input }],
-        transitionDuration: [{ type: i0.Input }],
-        transitionTimingFunction: [{ type: i0.Input }],
-        videoProperties: [{ type: i0.Input }],
-        counterSeparator: [{ type: i0.Input }],
-        overflowCellsLimit: [{ type: i0.Input }],
-        listeners: [{ type: i0.Input }],
-        cellsToShow: [{ type: i0.Input }],
-        cellsToScroll: [{ type: i0.Input }],
-        freeScroll: [{ type: i0.Input }],
-        arrows: [{ type: i0.Input }],
-        arrowsOutside: [{ type: i0.Input }],
-        arrowsTheme: [{ type: i0.Input }],
-        images: [{ type: i0.Input }],
-        cellWidth: [{ type: i0.Input, args: ['cellWidth',] }],
-        isCounter: [{ type: i0.Input, args: ['counter',] }],
-        loop: [{ type: i0.Input, args: ['loop',] }],
-        lightDOM: [{ type: i0.Input, args: ['lightDOM',] }],
-        hostClassCarousel: [{ type: i0.HostBinding, args: ['class.carousel',] }],
-        hostStyleHeight: [{ type: i0.HostBinding, args: ['style.height',] }],
-        hostStyleWidth: [{ type: i0.HostBinding, args: ['style.width',] }],
-        onWindowResize: [{ type: i0.HostListener, args: ['window:resize', ['$event'],] }],
-        onMousemove: [{ type: i0.HostListener, args: ['mousemove', ['$event'],] }],
-        onMouseleave: [{ type: i0.HostListener, args: ['mouseleave', ['$event'],] }]
+        events: [{ type: core.Output }],
+        id: [{ type: core.Input }],
+        height: [{ type: core.Input }],
+        width: [{ type: core.Input }],
+        autoplay: [{ type: core.Input }],
+        autoplayInterval: [{ type: core.Input }],
+        pauseOnHover: [{ type: core.Input }],
+        dots: [{ type: core.Input }],
+        borderRadius: [{ type: core.Input }],
+        margin: [{ type: core.Input }],
+        objectFit: [{ type: core.Input }],
+        minSwipeDistance: [{ type: core.Input }],
+        transitionDuration: [{ type: core.Input }],
+        transitionTimingFunction: [{ type: core.Input }],
+        videoProperties: [{ type: core.Input }],
+        counterSeparator: [{ type: core.Input }],
+        overflowCellsLimit: [{ type: core.Input }],
+        listeners: [{ type: core.Input }],
+        cellsToShow: [{ type: core.Input }],
+        cellsToScroll: [{ type: core.Input }],
+        freeScroll: [{ type: core.Input }],
+        arrows: [{ type: core.Input }],
+        arrowsOutside: [{ type: core.Input }],
+        arrowsTheme: [{ type: core.Input }],
+        images: [{ type: core.Input }],
+        cellWidth: [{ type: core.Input, args: ['cellWidth',] }],
+        isCounter: [{ type: core.Input, args: ['counter',] }],
+        loop: [{ type: core.Input, args: ['loop',] }],
+        lightDOM: [{ type: core.Input, args: ['lightDOM',] }],
+        hostClassCarousel: [{ type: core.HostBinding, args: ['class.carousel',] }],
+        hostStyleHeight: [{ type: core.HostBinding, args: ['style.height',] }],
+        hostStyleWidth: [{ type: core.HostBinding, args: ['style.width',] }],
+        onWindowResize: [{ type: core.HostListener, args: ['window:resize', ['$event'],] }],
+        onMousemove: [{ type: core.HostListener, args: ['mousemove', ['$event'],] }],
+        onMouseleave: [{ type: core.HostListener, args: ['mouseleave', ['$event'],] }]
     };
 
     var IvyCarouselModule = /** @class */ (function () {
@@ -2104,7 +2076,7 @@
         return IvyCarouselModule;
     }());
     IvyCarouselModule.decorators = [
-        { type: i0.NgModule, args: [{
+        { type: core.NgModule, args: [{
                     declarations: [
                         CarouselComponent
                     ],
@@ -2122,21 +2094,6 @@
                 },] }
     ];
 
-    var AngularResponsiveCarouselModule = /** @class */ (function () {
-        function AngularResponsiveCarouselModule() {
-        }
-        return AngularResponsiveCarouselModule;
-    }());
-    AngularResponsiveCarouselModule.decorators = [
-        { type: i0.NgModule, args: [{
-                    declarations: [AngularResponsiveCarouselComponent],
-                    imports: [
-                        IvyCarouselModule
-                    ],
-                    exports: [AngularResponsiveCarouselComponent, IvyCarouselModule]
-                },] }
-    ];
-
     /*
      * Public API Surface of angular-responsive-carousel
      */
@@ -2145,11 +2102,12 @@
      * Generated bundle index. Do not edit.
      */
 
-    exports.AngularResponsiveCarouselComponent = AngularResponsiveCarouselComponent;
-    exports.AngularResponsiveCarouselModule = AngularResponsiveCarouselModule;
-    exports.AngularResponsiveCarouselService = AngularResponsiveCarouselService;
-    exports.ɵa = IvyCarouselModule;
-    exports.ɵb = CarouselComponent;
+    exports.Carousel = Carousel;
+    exports.CarouselComponent = CarouselComponent;
+    exports.Cells = Cells;
+    exports.ImageUtils = ImageUtils;
+    exports.IvyCarouselModule = IvyCarouselModule;
+    exports.Utils = Utils;
 
     Object.defineProperty(exports, '__esModule', { value: true });
 

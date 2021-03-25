@@ -1,33 +1,5 @@
-import { ɵɵdefineInjectable, Injectable, Component, EventEmitter, ElementRef, ChangeDetectorRef, Output, Input, HostBinding, HostListener, NgModule } from '@angular/core';
+import { EventEmitter, Component, ElementRef, ChangeDetectorRef, Output, Input, HostBinding, HostListener, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-class AngularResponsiveCarouselService {
-    constructor() { }
-}
-AngularResponsiveCarouselService.ɵprov = ɵɵdefineInjectable({ factory: function AngularResponsiveCarouselService_Factory() { return new AngularResponsiveCarouselService(); }, token: AngularResponsiveCarouselService, providedIn: "root" });
-AngularResponsiveCarouselService.decorators = [
-    { type: Injectable, args: [{
-                providedIn: 'root'
-            },] }
-];
-AngularResponsiveCarouselService.ctorParameters = () => [];
-
-class AngularResponsiveCarouselComponent {
-    constructor() { }
-    ngOnInit() {
-    }
-}
-AngularResponsiveCarouselComponent.decorators = [
-    { type: Component, args: [{
-                selector: 'lib-angular-responsive-carousel',
-                template: `
-    <p>
-      angular-responsive-carousel works!
-    </p>
-  `
-            },] }
-];
-AngularResponsiveCarouselComponent.ctorParameters = () => [];
 
 class Touches {
     constructor(properties) {
@@ -1799,18 +1771,6 @@ IvyCarouselModule.decorators = [
             },] }
 ];
 
-class AngularResponsiveCarouselModule {
-}
-AngularResponsiveCarouselModule.decorators = [
-    { type: NgModule, args: [{
-                declarations: [AngularResponsiveCarouselComponent],
-                imports: [
-                    IvyCarouselModule
-                ],
-                exports: [AngularResponsiveCarouselComponent, IvyCarouselModule]
-            },] }
-];
-
 /*
  * Public API Surface of angular-responsive-carousel
  */
@@ -1819,5 +1779,5 @@ AngularResponsiveCarouselModule.decorators = [
  * Generated bundle index. Do not edit.
  */
 
-export { AngularResponsiveCarouselComponent, AngularResponsiveCarouselModule, AngularResponsiveCarouselService, IvyCarouselModule as ɵa, CarouselComponent as ɵb };
+export { Carousel, CarouselComponent, Cells, ImageUtils, IvyCarouselModule, Utils };
 //# sourceMappingURL=angular-responsive-carousel.js.map

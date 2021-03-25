@@ -1,1 +1,0 @@
-{"version":3,"file":"angular-responsive-carousel.module.d.ts","sources":["angular-responsive-carousel.module.d.ts"],"names":[],"mappings":";;;AAAA;;;AACA","sourcesContent":["export declare class AngularResponsiveCarouselModule {\r\n}\r\n"]}
